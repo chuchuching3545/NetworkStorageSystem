@@ -4,6 +4,12 @@
 
 模擬雲端儲存系統、youtube影片播放，client可以在連上server之後，輸入指令來存取資料或播放影片。
 
+## 環境要求
+
+* openCV
+- ffmpeg-3.3
++ pthread
+
 ## client指令
 
 ```bash=
@@ -30,14 +36,14 @@ $ play [video_name].mpg
 ## Run
 
 * 建立server
-	* 輸入`Make server`
+	* 輸入`make server`
 	- 輸入`./server [port]`
 		* port是server的port
 
 - 建立client
-	* 輸入`Make client`
+	* 輸入`make client`
 	- 輸入`./client [IP]:[port]`
-		* IP是server的IP
-		- port是server的port
+		* [IP]是server的IP address
+		- [port]是server的port
 	+ 可以同時建立許多client
-		
+
